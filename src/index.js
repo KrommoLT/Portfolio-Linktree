@@ -1,81 +1,52 @@
 const $links = document.getElementById("links");
 const $name = document.querySelector("h1");
+const $text = document.getElementById("description");
 
 const data = {
-  name: "Lucas Toledo",
-  nickname: "Lucas Toledo",
-  description: "...",
-  avatar: "...",
+  name: "Lucas Nahuel Toledo Perez",
+  nickname: "Lucas Nahuel Toledo Perez",
+  description:
+    "Desarrollador web en formación con interés en el diseño y la programacion de experiencias digitales. Estudio desarrollo web y de videojuegos, combinando logica, diseño y creatividad para construir sitios interactivos y proyectos orientados al usuario.",
+  avatar: "../IMG_8959.png",
   social: [
     {
-      name: "youtube",
-      url: "https://www.youtube.com/",
-      username: "",
-    },
-    {
       name: "github",
-      url: "https://github.com/",
+      url: "https://github.com/KrommoLT",
       username: "",
     },
     {
       name: "instagram",
-      url: "https://instagram.com/",
+      url: "https://www.instagram.com/lucasnahuelt",
       username: "",
     },
     {
       name: "twitter",
-      url: "https://twitter.com/",
+      url: "https://x.com/lucasnahueltol",
       username: "",
     },
     {
       name: "linkedin",
-      url: "https://www.linkedin.com/",
-      username: "",
-    },
-    {
-      name: "twitch",
-      url: "https://twitch.tv/",
-      username: "",
-    },
-    {
-      name: "discord",
-      url: "https://discord.gg/",
+      url: "https://www.linkedin.com/in/lucas-nahuel-toledo-p%C3%A9rez-24b44314b/",
       username: "",
     },
   ],
   links: [
     {
-      name: "mentorías",
-      url: "https://example.com/",
-      color: "fuchsia",
-      emoji: "💻",
-    },
-    {
-      name: "blog",
-      url: "https://example.com/",
-      color: "red",
-      emoji: "📖",
-    },
-    {
-      name: "podcast",
-      url: "https://example.com/",
+      name: "Proyectos",
+      url: "https://github.com/KrommoLT",
       color: "yellow",
       emoji: "💬",
     },
-    {
-      name: "cursos",
-      url: "https://example.com/",
-      color: "lime",
-      emoji: "🎒",
-    },
-    {
-      name: "sponsors",
-      url: "https://example.com/",
-      color: "rose",
-      emoji: "🚀",
-    },
   ],
   footer: "Made with Love on Argentina",
+};
+
+const text = () => {
+  let name = document.createTextNode(data?.name);
+  let description = document.createTextNode(data?.description);
+
+  $name.appendChild(name);
+  $text.appendChild(description);
 };
 
 const main = () => {
@@ -97,4 +68,5 @@ const main = () => {
   $name.appendChild(name);
 };
 
+text();
 main();
