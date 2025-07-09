@@ -1,6 +1,5 @@
 const $links = document.getElementById("links");
 const $name = document.querySelector("h1");
-const $text = document.getElementById("description");
 
 const data = {
   name: "Lucas Nahuel Toledo Perez",
@@ -37,16 +36,14 @@ const data = {
       color: "yellow",
       emoji: "💬",
     },
+    {
+      name: "Certificados",
+      url: "https://www.linkedin.com/in/lucas-nahuel-toledo-p%C3%A9rez-24b44314b/details/education/",
+      color: "green",
+      emoji: "📃",
+    },
   ],
   footer: "Made with Love on Argentina",
-};
-
-const text = () => {
-  let name = document.createTextNode(data?.name);
-  let description = document.createTextNode(data?.description);
-
-  $name.appendChild(name);
-  $text.appendChild(description);
 };
 
 const main = () => {
@@ -68,5 +65,4 @@ const main = () => {
   $name.appendChild(name);
 };
 
-text();
 main();
